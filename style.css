@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+
+body{
+    font-size: 20px;
+    color: white;
+
+}
+
+/*----------------------Primeiro item1----------------------*/
+
+.item1{
+    height: 420px;
+    background-image: url("./img/codweb.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8px;
+}
+
+.item1 h1{
+    margin-top: 80px;
+}
+
+
+.item1 a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 20px 35px;  
+    position: relative;
+    top: 50px;
+    border:slategray solid 1px;
+
+}
+
+.item1 a:hover{
+    background-color: slategrey; 
+}
+
+/*----------------------Segundo item2----------------------*/
+
+
+.item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: darkgray;
+    padding: 20px;
+    
+    
+}
+
+.item2-1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    
+    
+    margin-top: 1rem; 
+}
+
+
+.sub_item2-1{
+    text-align: justify;
+    padding:  20px ;
+}
+
+
+/*----------------------Terceiro item3----------------------*/
+
+.item3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color:black;
+    padding: 40px 30px;
+    /*
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:10px;
+    background-color: black;
+    color: black;
+    text-align: center;
+    */   
+}
+
+.item3-1{
+    background-color: white;
+    text-align: justify;
+    color: black;
+
+
+    /*
+    background-color:white;
+    border: slategray solid 1px;
+    */
+}
+.item3-1 p{
+    padding: 20px;
+}
+
+.item3-1 img{
+    width: 100% ;
+
+
+}
+
+.item3-1 h3{
+    margin: 20px;
+    text-align: center;
+}
+
+
+/*----------------------Quarto item4----------------------*/
+
+.item4{
+    color: black;
+    background-color:white;
+    text-align: center;
+    padding: 20px;
+       
+}
+
+.item4 h1,p{
+    margin-bottom: 30px;  
+
+}
+
+/*----------------------Quinto item5----------------------*/
+
+.item5{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+    text-align: center;       
+}
+
+.item5 h1{
+    margin-bottom: 15px;  
+}
+
+.item5 p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.item5 span{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*--------------------Sexto item6----------------------*/
+
+.item6{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+  
+}
+
+/*-------------Design web responsivo - Consultas de mídia---------------*/
+
+@media (max-width:700px){
+    .item3 ,.item4 ,.item5, .item6 {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .item1 p{
+        text-align: justify;
+    }
+    .item1 h1,a{
+        align-items: center;
+    }
+    
+    .item3{
+        padding: 40px 30px;
+    }
+
+    .item4 p{
+        text-align: justify;
+    }
+
+    .item2-1{
+        display:flex;
+        flex-direction: column;  
+    }
+
+
+    .sub_item2-1{
+        text-align: justify;
+        padding:  5px ;
+    }
+    
+
+
+    .item2-1 p{
+        width: 100%;
+       
+    }
+    
+}
+
+
+@media (min-width:1000px){
+    .item3{
+        padding: 40px 70px;
+    }
+
+}
+
+@media (min-width:1010px) {
+    .item3{
+        padding: 40px 80px;
+    }
+
+}
+
+@media (min-width:1015px){
+    .item3{
+        padding: 40px 120px;
+    }
+
+}
+
+
+@media (min-width:1024px){
+    .item3{
+        padding: 40px 150px;
+    }
+
+}
+
+
+
+
+
+
+
+
